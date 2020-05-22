@@ -14,6 +14,8 @@ $db_data = db_read('todo', "SELECT * FROM todo_list_0");
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
   <title>To Do List</title>
 </head>
 <body style="background-color: #F4F5F7" >
@@ -40,12 +42,9 @@ $db_data = db_read('todo', "SELECT * FROM todo_list_0");
 
           </div> -->
 
-          <div class="to_do_date">
-            <p>
-              <?php 
-                echo $data['date'];
-              ?>
-            </p>
+          <div class="to_do_actions">
+            <button class="complete_button">Complete</button>
+            <button class="delete_button"><img class="trash_can_image" src="images/trash.svg"/></button>
           </div>
           
         </div>
@@ -71,8 +70,7 @@ $db_data = db_read('todo', "SELECT * FROM todo_list_0");
           xhttp.open("POST", "insert_script.php", true)
           xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
           xhttp.send(data)
-
-
+          alert(data);
         }
       </script>
 

@@ -1,7 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  
+
 }
 
 /* .body {
@@ -21,8 +21,9 @@
 
 .to_do_title h1 {
   font-size: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
+  font-family: Roboto;
+  font-weight: bold;
+  color: #72a5fc;
 
   /* text-align: center; */
 }
@@ -30,7 +31,7 @@
 .to_do_title p {
   padding: 10px;
   font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto;
   text-align: center;
 }
 
@@ -39,6 +40,8 @@
   position: relative;
   height: 80vh;
   overflow-y: auto;
+
+
 
 
   /* box-shadow:
@@ -66,16 +69,20 @@
 }
 
 .to_do {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Rubik;
+  font-weight: lighter;
   padding: 30px 30px 0px 30px;
   display: flex;
   flex-direction: row;
+
 
 }
 
 .to_do_value {
   padding-right: 10px;
-  flex-wrap: wrap;
+  
+  font-family: Rubik;
+
 }
 
 .to_do_date {
@@ -85,6 +92,49 @@
   justify-content: flex-end;
   align-items: center;
   min-width: 92px;
+}
+
+.to_do_actions {
+  display:flex;
+  flex:1;
+  justify-content: flex-end;
+  margin-left: auto;
+  
+  max-height: 45px;
+  /* min-width: 92px; */
+  flex-direction: row;
+}
+
+.to_do_actions button {
+  margin: 5px;
+  
+}
+
+.complete_button{
+  font-size: 13px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: lightgreen;
+  border-radius: 5px;
+  padding: 5px
+}
+
+.delete_button {
+  font-size: 13px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #fa836e;
+  border-radius: 5px;
+  padding: 5px;
+
+}
+
+.trash_can_image {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .to_do_date p {
