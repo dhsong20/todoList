@@ -1,0 +1,99 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+/* .body {
+  background-color: lightgrey;
+} */
+
+.to_do_title {
+  position: relative;
+  /* left: 50%; */
+  /* margin-top: 40px; */
+  /* transform: translate(-50%); */
+  /* border: 1px black solid; */
+  margin: 20px;
+  padding: 10px;
+
+}
+
+.to_do_title h1 {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+
+  /* text-align: center; */
+}
+
+.to_do_title p {
+  padding: 10px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.to_do_area {
+  margin: 20px;
+  position: relative;
+  height: 80vh;
+  overflow-y: auto;
+
+
+  /* box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12); */
+
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.to_do_area hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+
+.to_do {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px 30px 0px 30px;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.to_do_value {
+  padding-right: 10px;
+  flex-wrap: wrap;
+}
+
+.to_do_date {
+  /* display: inline-block; */
+  display:flex; 
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+  min-width: 92px;
+}
+
+.to_do_date p {
+  background-color: #62ccfc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.new_todo_form {
+  margin-top: auto;
+  padding: 30px 30px 30px;
+}
