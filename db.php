@@ -44,6 +44,7 @@ function db_write($db_name, $date, $value, $completion) {
 
   $database = db_connect($db_name);
   $value = addslashes($value);
+  $date = addslashes($date);
   $sql_query = "insert into todo_list_0(id, date, value, completion) values(null, '$date', '$value', '$completion')";
   
   

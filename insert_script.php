@@ -4,6 +4,8 @@
 
   $data = $_POST['new_todo'];
   ChromePhp::log($data);
-  db_write("todo", Date("Y/m/d"), $data, 0);
+  $dateTime = date("Y-m-d H:i:s");
+  ChromePhp::log($dateTime);
+  db_write("todo", $dateTime, $data, 0);
   echo("hello");
 ?>
