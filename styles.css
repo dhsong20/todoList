@@ -38,9 +38,9 @@
 .to_do_area {
   margin: 20px;
   position: relative;
-  height: 80vh;
+  height: 75vh;
   overflow-y: auto;
-
+  padding-bottom: 30px;
   border-radius: 5px;
 
 

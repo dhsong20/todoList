@@ -68,7 +68,7 @@ $db_data = array_reverse(db_read('todo', "SELECT * FROM todo_list_0"));
           </div>
           
         </div>
-        <hr/>
+        <!-- <hr/> -->
       <?php endforeach; ?>
 
       
