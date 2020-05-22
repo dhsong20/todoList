@@ -43,7 +43,9 @@ function db_read($db_name, $sql_query) {
 function db_write($db_name, $date, $value, $completion) {
 
   $database = db_connect($db_name);
+  $value = addslashes($value);
   $sql_query = "insert into todo_list_0(id, date, value, completion) values(null, '$date', '$value', '$completion')";
+  
   
   
 
@@ -60,36 +62,19 @@ function db_write($db_name, $date, $value, $completion) {
 
 }
 
+function db_delete($db_name, $id_delete) {
+  print_r("hello");
+  $database = db_connect($db_name);
+  $sql_query = "delete from todo_list_0 where todo_list_0.id = $id_delete";
+  $result = mysqli_query($database, $sql_query);
+  if ($result) {
+    echo "db delete was successful";
+  } else {
+    echo "db delete had error";
+  }
 
+  $database -> close();
 
+}
 
-
-
-
-
-
-
-// $user = 'root';
-// $pass = '';
-// $db = 'hello';
-
-// $db = new mysqli('localhost',$user,$pass,$db) or die("unable to connect");
-
-// $sql = "SELECT * FROM users";
-// $result = $db->query($sql);
-
-// $data = array();
-
-// if ($result->num_rows > 0) {
-//     // output data of each row
-//     while($row = $result->fetch_assoc()) {
-//         echo "id: " . $row["id"]. " Name: " . $row["name"]. " age:" . $row["age"]. "<br>";
-//         array_push($data,$row);
-//     }
-// } else {
-//     echo "0 results";
-// }
-
-// print_r($data);
-// $db->close();
 ?>
